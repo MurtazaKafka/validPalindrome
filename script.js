@@ -22,7 +22,8 @@ function isPalindrome(s) {
   s = s.replace(/\W/g, ""); // removing non-alphanumeric letters
   let opposite = s.length - 1;  
   let result = true;
-  for (let i = 0; i <= s.length - 1; i++, opposite--) {
+
+  for (let i = 0; i < s.length - 1; i++, opposite--) {
     if (s[i] !== s[opposite]) {
       result = false;
       break;
